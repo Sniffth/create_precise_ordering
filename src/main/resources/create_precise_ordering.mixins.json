@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.examplemod.mixin",
+  "package": "com.sniffth.create_precise_ordering.mixin",
   "compatibilityLevel": "JAVA_21",
-  "refmap": "examplemod.refmap.json",
+  "mixins": [],
   "client": [
-    "PonderSceneAccessor"
+    "StockKeeperRequestScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

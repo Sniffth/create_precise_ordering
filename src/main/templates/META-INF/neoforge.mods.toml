@@ -9,9 +9,6 @@ displayName = "${mod_name}"
 authors = "${mod_authors}"
 description = '''${mod_description}'''
 
-[[mixins]]
-config = "${mod_id}.mixins.json"
-
 [[dependencies.${mod_id}]]
 modId = "neoforge"
 type = "required"
@@ -32,3 +29,6 @@ type = "required"
 versionRange = "[6.0.9,6.1.0)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[mixins]]
+config = "create_precise_ordering.mixins.json"
