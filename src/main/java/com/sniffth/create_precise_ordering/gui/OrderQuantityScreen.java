@@ -62,12 +62,12 @@ public class OrderQuantityScreen extends AbstractSimiScreen {
 
         this.confirmButton = new IconButton(guiLeft + 195, guiTop + 23, AllIcons.I_CONFIRM);
         this.confirmButton.withCallback(this::confirmOrder);
-        this.confirmButton.setToolTip(Component.literal("Confirm"));
+        this.confirmButton.setToolTip(Component.translatable("gui.ok"));
         this.addRenderableWidget(this.confirmButton);
 
         this.cancelButton = new IconButton(guiLeft + 195, guiTop + 72, AllIcons.I_DISABLE);
         this.cancelButton.withCallback(this::onClose);
-        this.cancelButton.setToolTip(Component.literal("Cancel"));
+        this.cancelButton.setToolTip(Component.translatable("gui.not_ok"));
         this.addRenderableWidget(this.cancelButton);
 
         this.addRenderableWidget(Button.builder(Component.literal("-1"), b -> modifyAmount(-1))
